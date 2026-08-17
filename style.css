@@ -1,0 +1,409 @@
+/* ========================================
+   CampusShare - Professional Style
+   ======================================== */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --dark: #1f2937;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --light: #f8fafc;
+    --border: #e5e7eb;
+    --white: #ffffff;
+    --success: #16a34a;
+    --danger: #dc2626;
+}
+
+
+/* ==============================
+   Global
+   ============================== */
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   Navbar
+   ============================== */
+
+.navbar {
+    background: #1f2937 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.navbar .nav-link {
+    color: #d1d5db !important;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+/* ==============================
+   Hero Section
+   ============================== */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #1f2937,
+        #111827
+    );
+
+    color: var(--white);
+
+    padding: 85px 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 750;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #d1d5db;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+
+/* ==============================
+   Cards
+   ============================== */
+
+.card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==============================
+   Item Cards
+   ============================== */
+
+.item-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 24px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.item-card h3,
+.item-card h4 {
+    font-weight: 650;
+    color: var(--dark);
+}
+
+.item-card p {
+    color: var(--muted);
+}
+
+
+/* ==============================
+   Dashboard Cards
+   ============================== */
+
+.dashboard-card {
+    padding: 28px;
+
+    border-radius: 14px;
+
+    color: white;
+
+    min-height: 170px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card h3,
+.dashboard-card h4 {
+    font-weight: 650;
+}
+
+.dashboard-card p {
+    opacity: 0.9;
+}
+
+
+/* ==============================
+   Buttons
+   ============================== */
+
+.btn {
+    border-radius: 8px;
+
+    padding: 10px 18px;
+
+    font-weight: 600;
+
+    border: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+.btn-dark {
+    background: #1f2937;
+}
+
+.btn-dark:hover {
+    background: #111827;
+}
+
+
+/* ==============================
+   Forms
+   ============================== */
+
+.form-control,
+.form-select {
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    padding: 11px 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+
+    outline: none;
+}
+
+.form-label {
+    font-weight: 600;
+
+    color: #374151;
+
+    margin-bottom: 6px;
+}
+
+
+/* ==============================
+   Badges
+   ============================== */
+
+.badge {
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+
+/* ==============================
+   Tables
+   ============================== */
+
+.table {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.table thead {
+    background: #1f2937;
+
+    color: white;
+}
+
+.table th {
+    font-weight: 600;
+
+    padding: 14px;
+}
+
+.table td {
+    padding: 13px;
+
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ==============================
+   Alerts
+   ============================== */
+
+.alert {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px 16px;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+    background: #1f2937;
+
+    color: #d1d5db;
+
+    padding: 25px;
+
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        border-radius: 12px;
+        padding: 45px 15px;
+    }
+
+    .card {
+        border-radius: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
